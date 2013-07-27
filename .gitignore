@@ -1,0 +1,21 @@
+# local filesystem related
+.DS_Store
+
+# IDE related
+/nbproject
+*.php~
+
+# project related
+composer.lock
+/app/bootstrap.php.cache
+/app/bootstrap_cache.php.cache
+/app/cache
+/app/logs
+/vendor
+/web/bundles
+/web/uploads/
+
+# security
+/app/config/parameters_unversioned.ini
+/app/config/parameters_unversioned.yml
+
