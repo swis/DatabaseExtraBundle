@@ -1,8 +1,8 @@
 {
     "name": "swis/database-extra-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony DatabaseExtraBundle",
-    "keywords": ["SQLite behaviour"],
+    "description": "This bundle extends the behaviour of a SQLite database in a Symfony2 project.",
+    "keywords": ["SQLite database behaviour"],
     "license": "MIT",
     "authors": [
         {
