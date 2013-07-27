@@ -13,17 +13,11 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4",
-        "symfony/framework-bundle": "~2.1",
-        "symfony/form": "~2.1",
-        "symfony/security-bundle": "~2.1"
+        "symfony/symfony": "~2.3",
+        "doctrine/dbal": ">=2.3",
+        "doctrine/orm": ">=2.3"
     },
     "require-dev": {
-        "twig/twig": "~1.5",
-        "doctrine/doctrine-bundle": "*",
-        "swiftmailer/swiftmailer": ">=4.3, <6.0",
-        "willdurand/propel-typehintable-behavior": "dev-master",
-        "symfony/yaml": "~2.1",
-        "symfony/validator": "~2.1"
     },
     "suggest": {
     },
