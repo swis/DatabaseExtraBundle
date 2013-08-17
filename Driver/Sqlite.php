@@ -17,6 +17,6 @@ class Sqlite extends \Doctrine\DBAL\Driver\PDOSqlite\Driver
 
     public static function radians($arg)
     {
-        return \deg2rad($arg);
+        return \deg2rad(\doubleval($arg));
     }
 }
