@@ -1,9 +1,17 @@
-SwisDatabaseExtraBundle
-===
+# SwisDatabaseExtraBundle
 
-To enable this bundle, just include it to your composer.json:
+This bundle provides additional features for databases in any Symfony 2 project.
 
 
+## Core features
+
+* Trigonometric and other additional functions for SQLite (ACOS, COS, RADIANS, SIN, SQRT, MOD, LOCATE)
+* DQL definitions of trigonometric functions for their usage with Doctrine (ACOS, COS, RADIANS, SIN)
+
+
+## Instructions
+
+1) Include the bundle in your `composer.json`
 
 ```
     "require": {
@@ -13,17 +21,17 @@ To enable this bundle, just include it to your composer.json:
     }
 ```
 
-enable it in your `AppKernel.php`
+2) Enable it in your `AppKernel.php`
 
 ```
     $bundles = array(
         ...
-        new Swis\Bundle\DatabaseExtraBundle\DnDatabaseExtraBundle(),
+        new Swis\Bundle\DatabaseExtraBundle\SwisDatabaseExtraBundle(),
         ...
     );
 ```
 
-and use the SQLite driver in your environment:
+3) Use the SQLite driver in your environment:
 
 ```
 doctrine:
