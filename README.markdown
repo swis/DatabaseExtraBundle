@@ -31,7 +31,7 @@ This bundle provides additional features for databases in any Symfony 2 project.
     );
 ```
 
-3) Use the SQLite driver in your environment:
+3a) For enabling the SQLite driver, edit your `config.yml`:
 
 ```
 doctrine:
@@ -39,4 +39,19 @@ doctrine:
         connections:
             default:
                 driver_class:                 \Swis\Bundle\DatabaseExtraBundle\Driver\Sqlite
+```
+
+3b) For enabling the DQL functions, edit your `config.yml`:
+
+```
+doctrine:
+    orm:
+        entity_managers:
+            default:
+                dql:
+                    numeric_functions:
+                        acos:         Swis\Bundle\DatabaseExtraBundle\DQL\Acos
+                        cos:          Swis\Bundle\DatabaseExtraBundle\DQL\Cos
+                        radians:      Swis\Bundle\DatabaseExtraBundle\DQL\Radians
+                        sin:          Swis\Bundle\DatabaseExtraBundle\DQL\Sin
 ```
